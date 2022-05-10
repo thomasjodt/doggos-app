@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <script src="main.js" defer></script>
+    <title>Doggos</title>
+</head>
+<body>
+  <h1 class="app-title">Doggos App</h1>
+  <section class="section-container" id="randomDoggos">
+    <h2 class="title">Random Doggos</h2>
+    <span id="error"></span>
+    <div class="pic-grid">
+
+      <article class="pic-container">
+        <img
+        id="pic1"
+        class="pic"
+        alt="Random doggo photo">
+        <button
+          id="random-button-1"
+          class="fav-button" >⭐</button>
+        </article>
+        
+        <article class="pic-container">
+          <img
+          id="pic2"
+          class="pic"
+          alt="Random doggo photo">
+          <button
+          id="random-button-2"
+          class="fav-button" >⭐</button>
+        </article>
+        
+        <article class="pic-container">
+          <img
+          id="pic3"
+          class="pic"
+          alt="Random doggo photo">
+          <button
+          id="random-button-3"
+          class="fav-button" >⭐</button>
+      </article>
+
+    </div>
+    <button
+    id="btn"
+    class="button"
+    onclick="getRandomDoggoImage()">
+    Get Random Image
+  </button>
+  </section>
+
+  <section id="uploadingDogo">
+    <h2 class="title" >Upload your Doggo picture</h2>
+
+    <form id="uploadingForm" >
+
+      <input type="file" id="file" name="file" >
+      <button
+        class="button upload"
+        type="button"
+        onclick="uploadDoggoPicture()" >
+          Upload
+      </button>
+
+    </form>
+  </section>
+
+  <section
+    class="section-container"
+    id="favouriteDoggos" >
+      <h2 class="title">Favorite Doggos</h2>
+      <div
+        class="pic-grid"
+        id="favourites-grid" >
+      </div>
+  </section>
+
+</body>
+</html>

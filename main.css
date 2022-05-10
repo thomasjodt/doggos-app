@@ -1,0 +1,105 @@
+* {
+  padding:          0;
+  margin:           0;
+  border:           none;
+  box-sizing:       border-box;
+  font-family:      Roboto, sans-serif;
+}
+html {
+  scroll-behavior:  smooth;
+  background-color: #222;
+}
+
+.app-title {
+  padding:          24px;
+  margin-bottom:    24px;
+  text-align:       center;
+  color:          #eee;
+  background:     #161616;
+}
+.pic-grid {
+  gap:              12px;
+  display:          flex;
+  flex-wrap:        wrap;
+  align-items:      center;
+  justify-content:  center;
+}
+.title {
+  font-size:        30px;
+  margin:           24px;
+  font-family:      Roboto;
+  text-align:       center;
+  color:          #EEE;
+}
+.pic-container {
+  height:           300px;
+  width:            300px;
+  border-radius:    12px;
+  margin-bottom:    20px;
+  display:          flex;
+  overflow:         hidden;
+  justify-content:  center;
+  align-items:      center;
+  position:         relative;
+  border:           4px solid #111;
+}
+.pic {
+  height:           100%;
+  object-fit:       cover;
+  text-align:       center;
+  font-family:      Roboto, sans-serif;
+  color:          #08B
+}
+.button {
+  padding:          16px;
+  font-size:        18px;
+  border-radius:    12px;
+  margin:           0 auto;
+  border:           none;
+  display:          block;
+  cursor:           pointer;
+  font-family:      Roboto, sans-serif;
+  color:          #FFF;
+  background:     #08B;
+}
+.fav-button {
+  bottom:           12px;
+  right:            12px;
+  font-size:        24px;
+  border:           none;
+  cursor:           pointer;
+  position:         absolute;
+  background-color: transparent;
+
+}
+#uploadingForm {
+  width:            50%;
+  margin:           0 auto;
+  display:          flex;
+  justify-content:  center;
+  align-items:      center;
+}
+.upload {
+  margin:         0 12px;
+  display:        inline-block;
+}
+input[type='file'] {
+  width:          100%;
+  margin-left:    12px; 
+  border-radius:  12px;
+  padding-right:  12px;
+  font-size:      1.2rem;
+  border:         2px solid #111;
+  color:        #EEE;
+}
+input[type='file']::-webkit-file-upload-button {
+  padding:          16px;
+  margin-right:     12px;
+  font-size:        18px;
+  border-radius:    12px;
+  border:           none;
+  cursor:           pointer;
+  font-family:      Roboto, sans-serif;
+  color:          #FFF;
+  background:     #08B;
+}
