@@ -1,0 +1,26 @@
+{
+  "name": "doggos-app",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasjodt/doggos-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomasjodt/doggos-app/issues"
+  },
+  "homepage": "https://github.com/thomasjodt/doggos-app#readme",
+  "description": "",
+  "devDependencies": {
+    "vite": "^6.2.5"
+  }
+}
