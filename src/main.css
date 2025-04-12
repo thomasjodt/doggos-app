@@ -1,77 +1,86 @@
 * {
-  padding:          0;
-  margin:           0;
-  border:           none;
-  box-sizing:       border-box;
-  font-family:      Roboto, sans-serif;
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
 }
 html {
-  scroll-behavior:  smooth;
   background-color: #222;
+  scroll-behavior: smooth;
 }
 
 .app-title {
-  padding:          24px;
-  margin-bottom:    24px;
-  text-align:       center;
-  color:          #eee;
-  background:     #161616;
+  color: #eee;
+  padding: 24px;
+  text-align: center;
+  background: #161616;
+  margin-bottom: 24px;
 }
 .pic-grid {
-  gap:              12px;
-  display:          flex;
-  flex-wrap:        wrap;
-  align-items:      center;
-  justify-content:  center;
+  gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 .title {
-  font-size:        30px;
-  margin:           24px;
-  font-family:      Roboto;
-  text-align:       center;
-  color:          #EEE;
+  color: #EEE;
+  margin: 24px;
+  font-size: 30px;
+  text-align: center;
 }
 .pic-container {
-  height:           300px;
-  width:            300px;
-  border-radius:    12px;
-  margin-bottom:    20px;
-  display:          flex;
-  overflow:         hidden;
-  justify-content:  center;
-  align-items:      center;
-  position:         relative;
-  border:           4px solid #111;
+  width: 300px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #ccc;
+  flex-direction: column;
+  background-color: #f0f0f0;
 }
 .pic {
-  height:           100%;
-  object-fit:       cover;
-  text-align:       center;
-  font-family:      Roboto, sans-serif;
-  color:          #08B
+  width: 100%;
+  color: #08B;
+  text-align: center;
+  object-fit: contain;
 }
 .button {
-  padding:          16px;
-  font-size:        18px;
-  border-radius:    12px;
-  margin:           0 auto;
-  border:           none;
-  display:          block;
-  cursor:           pointer;
-  font-family:      Roboto, sans-serif;
-  color:          #FFF;
-  background:     #08B;
+  padding: 16px;
+  font-size: 18px;
+  border-radius: 12px;
+  margin: 0 auto;
+  border: none;
+  display: block;
+  cursor: pointer;
+  color: #FFF;
+  background: #08B;
 }
-.fav-button {
-  bottom:           12px;
-  right:            12px;
-  font-size:        24px;
-  border:           none;
-  cursor:           pointer;
-  position:         absolute;
-  background-color: transparent;
 
+.fav-button {
+  border: none;
+  border-radius: 4px;
+  margin: 8px;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 4px;
+  background-color: transparent;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+
+  &:hover {
+    background-color: #cccccc;
+  }
 }
+
 #uploadingForm {
   width:            50%;
   margin:           0 auto;
@@ -79,10 +88,12 @@ html {
   justify-content:  center;
   align-items:      center;
 }
+
 .upload {
   margin:         0 12px;
   display:        inline-block;
 }
+
 input[type='file'] {
   width:          100%;
   margin-left:    12px; 
@@ -99,7 +110,6 @@ input[type='file']::-webkit-file-upload-button {
   border-radius:    12px;
   border:           none;
   cursor:           pointer;
-  font-family:      Roboto, sans-serif;
   color:          #FFF;
   background:     #08B;
 }
